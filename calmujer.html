@@ -1,0 +1,154 @@
+
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: #f8f9fb;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .catalogo {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .producto {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .producto:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .producto img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .contenido {
+        padding: 15px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .producto h3 {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .producto p {
+        font-size: 14px;
+        color: #666;
+    }
+
+    .precio {
+        font-size: 20px;
+        font-weight: bold;
+        color: #e91e63;
+        margin-top: 10px;
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .stock {
+        font-size: 13px;
+        color: #4caf50;
+    }
+
+    .promo {
+        background: #ff5722;
+        color: white;
+        padding: 4px 8px;
+        border-radius: 6px;
+        font-size: 12px;
+    }
+
+    /* Responsive fino */
+    @media (max-width: 500px) {
+        .producto img {
+            height: 160px;
+        }
+    }
+</style>
+</head>
+
+<h1>👠 Catálogo Calzado Mujer 2026</h1>
+
+<div class="catalogo">
+
+    <div class="producto">
+        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2" alt="">
+        <div class="contenido">
+            <h3>Tacones Elegance</h3>
+            <p>Ideales para eventos formales con máximo confort.</p>
+            <div class="precio">$55.99</div>
+            <div class="info">
+                <span class="stock">Stock: 15</span>
+                <span class="promo">10% OFF</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="data:image/jpeg;base64,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" alt="">
+        <div class="contenido">
+            <h3>Zapatillas Urban</h3>
+            <p>Perfectas para uso diario con estilo moderno.</p>
+            <div class="precio">$49.99</div>
+            <div class="info">
+                <span class="stock">Stock: 25</span>
+                <span class="promo">2x1</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASEg4SEBEWEBAQEBURDw8PEA8QEBAQFRYWGRYTFhMZHSggGiYlGxUVITEhMSsuMC4uFx81ODMsNygwLi0BCgoKDg0OFw8QGi0fHx4tLS4tKy0rLS0tLSsrLS03Ky0tKy0tLSstLS01LTUtLS0rLS0tLTc3LS03LTc3LS0tLf/AABEIARoAswMBIgACEQEDEQH/xAAbAAEAAgIDAAAAAAAAAAAAAAAABAUGBwECA//EAEQQAAICAQIDBQMJBAUNAAAAAAABAgMRBCEFEjEGE0FRcSJhgRQjMkJSkaGxwTNikuFDgqLT8AcVJURTVGNyc7PC0dL/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAQID/8QAGxEBAQEBAAMBAAAAAAAAAAAAAAERAhIhMUH/2gAMAwEAAhEDEQA/AN2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKjV9pNLVa6ZzkpR5VOUa7JVwnLHLCU0mlJ5WI9XleZ539paoxlJU3zUU5Nqh17Ly71xz6E2LlXYKzhXHKdRVXdVzONkFNJwakl5PwznbqSvlXlF/FxX5ZGwypIIctVPyiv6zl+iIeo4nZH7H8Mv/onlF8auAcReUn5rJyaZAAAAAAAAAAAAAAAAAAAAOGBqHiEvnuKVvMbXqKtU5WfNwXc3QsS5p4SzFKC3eW3h4M4npdRbXKtUzgpLrZbTBtdcZrnJ48MbbGGcf0uNfqJydc8TjKmrUUT1DtjJKU4LD6R9r2Vl46LOWbE7NPFEKm05UpQeFhKLSlDC5pbcrWN3tj0XOR0vWIPZTs3PS0RqssU5qVj54wxiM7JTUct5aXMW/wAhf+0n8ORfoTQb8Yx5VXvhNb+lKyXudkl+WCNxavT6Wi691p91BySnKUuaX1Y756vC+Jcmve1nFp6yUaNN7dMbYqNtcoSb1MbZ1uNkMNqGVjOMS9rbCTJZIstq47HXc8rXBt1r6acueCsy1ywfXwlnO/0dtzKiDwbh0dPTCqONsynJLHPbNuU5v1k2ycWTIlu0ABUAAAAAAAAAAAAAAAADzue2PPY9Dxse/oiVYxzX8M763WVqXJbPTV2aexNpwsi7o526r24pro02jHNdxKVVmOedNtfOlCiNVly7vPd0yjZFZg3J9F0muVqOG8zvShqtLN/0kbaPdmSVi/7LXxO3HOBQ1GJc0qrUklZBv2oqSkoWR+vHmWcbPrhrLM41rx4b2npn7N3zFsVWpqbXdc1kFNJW55emdm87PyLmy6EVzSkoxxnmbSWPPJg77L6mEotQhNwnK9TqsdcXd9Xmrm+WTSb9qSbeF7RI0fAdTFJd1GMlDmVnPRBc7ypQcoQbfXKahFrGzLtMiR2i4srYzphLkqlFxsnzqq2alFpcie6jnZy6vKxs8nr2X4MueWsthy22L5tSXLOMH9acVhKTjyp7eHnJk7hnAYVtTsl3s01KC9pVVNJL2INvy6tvG2MFyM/alv5AAGmQAAAAAAAAAAAAAAAAAAcNkSuzOX5ksrFJxbi+qM1rlD7UqfyayypZtocb6l5zrkp8r9VFr4lzotVC2uu2t5hbCM4Nbpxksr8yFJ5TT3TWGio7ESsqeo0k4SVdNkp6axp8s6pvmcM9MxcunlL3El9rZ6ZWADbAAAAAAAAAAAAAAAAAAAAAAAAAVOs0qlKbTcJZ6xxv6p7P16+8tiDPrL/mZK1yqnddD6UObH1q98rzcW8r0WTrRrIOWzSbXRuUJp+j3XxRaNHjbp4SWJxjNeUoqS+5mMdNdq9bJePP7pbS+/oyXRroS2fsy8VLZoxiPCtU53PT6lfTc46fU1qylQba5ISjicOj3zJL7ONjyfG+6lCrX1PSWSfLXKySnpbJPwq1Kwk/3ZcsvcX3GblZqclPRqZR6e1H7L+kvTz/AD9zLLT6iM1mL9V4os61m849gAaZAAAB1nJJNt4SWW28JJeLZymByAAAAAAAAAAAAAECXV+rJ5Afj6v8yVrlwzqdmdTLbponi5/vRx92/wCpP1elrthOu2EbK5rE67IqUJJ+Di9mVsXi6p+eY/GWP0iy4NRjr6wXW8C1WgzZoebVaRby4fZPNtMfF6a17v8A6ctvJon8G4tRqod7RZunyz2cLK5r6lsHvFr3/ijKzFO0vZJ2WfK9DYtLr4reePmdTFf0d8PFfvdUSwnS503EcPlu9l+E/qy9+fD/AB0LIwbgfaON85aXVVvS66v9pppv6X/Epn0mvH+W7vab7KcL6dXh7vcvL0/mTyz61ed+LwEWniFcvrcr8pbfj0Pbvofaj/EjUsrGVQ9sNQ2tNpo9dTdFTx17mDTn+n3Mt657lK499rpT6w09ajB+HM+rX3zXwRcRXVmJdtrdmSRIpnnPuePwPUjaOS5eqy231WSRlG4xXIODkqAAAAAAAABXony6PHXBqe+HayuUlCMboJ+y/wDR7yvDq4sla5rZWBsaves7W/7qv4dD/eHV6rtc/wDVkv6vDv1mRdbE4ldGvu5yeIxmm2/jH/yLb5XD7SNV8K4b2g1dsKuJQdWl3lKyPyGLhJdP2cm3lcyxhrLRsuPCK8dW/iIlxMV0fNfedlJeZXvhEPtSXxOkuDLwskip6R+1fZbT6+CVmYWw3o1Ne1tMvBqS36+H5dTFNNx/VcPnHTcXXNVJ8tHE4LNNnlG5Y9mXv+9eLy6fB7fq3ffkpuM9n9ZbCcOau2EliULJNxkvemsEqyrV1RmlKuUZRksrLzGSfjGaz+p5zXL1rn6xhKxf2M/oaql2M7QaSUnw+M4Qbz3Veq08qt/FV2Tx+BO0+u7Wwwp6LvMdW/k2ZerhNfhv7/ExeNbneNn6V4i2srm33jKL9HFrK2x+J21WqUISbeElu99ka7/zv2neMcIgsdea6Cz7/wBojjUWdqbeVR4bRTh5crNRTNPy273zNTnPSXqNiaKmKXM5fS38U9/cS3q4Lxz6Gr3wftbPrZpqfSVW39iR0XYLtFZ+34lXFPqq7r4/hXXD8y5U2Vs6ziUF/wC3hHpwrilV/eKucZuppTUJxm4trKUknsa20v8AkitbUtRrIWtb+3RZe16SssNi8A4U9NUqu87xLp83CtL3JIs1LizABWQAAAAAAAHAOQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//9k=" alt="">
+        <div class="contenido">
+            <h3>Sandalias Glam</h3>
+            <p>Diseño elegante perfecto para verano.</p>
+            <div class="precio">$49.99</div>
+            <div class="info">
+                <span class="stock">Stock: 18</span>
+                <span class="promo">Envío Gratis</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="">
+        <div class="contenido">
+            <h3>Botines Trend</h3>
+            <p>Estilo urbano con acabado premium.</p>
+            <div class="precio">$79.99</div>
+            <div class="info">
+                <span class="stock">Stock: 12</span>
+                <span class="promo">15% OFF</span>
+            </div>
+        </div>
+    </div>
+
+</div>

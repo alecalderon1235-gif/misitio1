@@ -1,0 +1,152 @@
+<style> 
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: #f8f9fb;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .catalogo {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .producto {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .producto:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .producto img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .contenido {
+        padding: 15px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .producto h3 {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .producto p {
+        font-size: 14px;
+        color: #666;
+    }
+
+    .precio {
+        font-size: 20px;
+        font-weight: bold;
+        color: #2196f3;
+        margin-top: 10px;
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .stock {
+        font-size: 13px;
+        color: #4caf50;
+    }
+
+    .promo {
+        background: #ff9800;
+        color: white;
+        padding: 4px 8px;
+        border-radius: 6px;
+        font-size: 12px;
+    }
+
+    @media (max-width: 500px) {
+        .producto img {
+            height: 160px;
+        }
+    }
+</style>
+</head>
+
+<h1>👟 Catálogo Calzado Niño 2026</h1>
+
+<div class="catalogo">
+
+    <div class="producto">
+        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="">
+        <div class="contenido">
+            <h3>Zapatos Escolares</h3>
+            <p>Resistentes y cómodos para el uso diario escolar.</p>
+            <div class="precio">$39.99</div>
+            <div class="info">
+                <span class="stock">Stock: 20</span>
+                <span class="promo">10% OFF</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="">
+        <div class="contenido">
+            <h3>Zapatillas Sport</h3>
+            <p>Ideales para correr, jugar y actividades deportivas.</p>
+            <div class="precio">$44.99</div>
+            <div class="info">
+                <span class="stock">Stock: 30</span>
+                <span class="promo">2x1</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a" alt="">
+        <div class="contenido">
+            <h3>Sandalias Kids</h3>
+            <p>Ligeras y frescas para días de verano.</p>
+            <div class="precio">$29.99</div>
+            <div class="info">
+                <span class="stock">Stock: 18</span>
+                <span class="promo">Envío Gratis</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552" alt="">
+        <div class="contenido">
+            <h3>Botas Aventura</h3>
+            <p>Perfectas para climas fríos y actividades al aire libre.</p>
+            <div class="precio">$54.99</div>
+            <div class="info">
+                <span class="stock">Stock: 12</span>
+                <span class="promo">15% OFF</span>
+            </div>
+        </div>
+    </div>
+
+</div>

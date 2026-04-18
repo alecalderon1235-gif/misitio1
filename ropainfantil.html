@@ -1,0 +1,152 @@
+<style> 
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: #f8f9fb;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .catalogo {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .producto {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .producto:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .producto img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .contenido {
+        padding: 15px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .producto h3 {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .producto p {
+        font-size: 14px;
+        color: #666;
+    }
+
+    .precio {
+        font-size: 20px;
+        font-weight: bold;
+        color: #4caf50;
+        margin-top: 10px;
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .stock {
+        font-size: 13px;
+        color: #4caf50;
+    }
+
+    .promo {
+        background: #ff5722;
+        color: white;
+        padding: 4px 8px;
+        border-radius: 6px;
+        font-size: 12px;
+    }
+
+    @media (max-width: 500px) {
+        .producto img {
+            height: 160px;
+        }
+    }
+</style>
+</head>
+
+<h1>👕 Catálogo Ropa Infantil 2026</h1>
+
+<div class="catalogo">
+
+    <div class="producto">
+        <img src="https://images.unsplash.com/photo-1521336575822-6da63fb45455" alt="">
+        <div class="contenido">
+            <h3>Camiseta Kids</h3>
+            <p>Suave y cómoda, ideal para uso diario.</p>
+            <div class="precio">$14.99</div>
+            <div class="info">
+                <span class="stock">Stock: 40</span>
+                <span class="promo">10% OFF</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea" alt="">
+        <div class="contenido">
+            <h3>Conjunto Deportivo</h3>
+            <p>Perfecto para jugar y actividades físicas.</p>
+            <div class="precio">$24.99</div>
+            <div class="info">
+                <span class="stock">Stock: 25</span>
+                <span class="promo">2x1</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9" alt="">
+        <div class="contenido">
+            <h3>Vestido Infantil</h3>
+            <p>Diseño fresco y elegante para ocasiones especiales.</p>
+            <div class="precio">$29.99</div>
+            <div class="info">
+                <span class="stock">Stock: 18</span>
+                <span class="promo">Envío Gratis</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38" alt="">
+        <div class="contenido">
+            <h3>Chaqueta Kids</h3>
+            <p>Abrigada y resistente para climas fríos.</p>
+            <div class="precio">$34.99</div>
+            <div class="info">
+                <span class="stock">Stock: 12</span>
+                <span class="promo">15% OFF</span>
+            </div>
+        </div>
+    </div>
+
+</div>
